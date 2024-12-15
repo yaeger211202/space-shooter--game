@@ -10,17 +10,20 @@ Score System: Track and display the player's score as they eliminate enemies.
 Collision Detection: Detect collisions between projectiles and enemies, as well as between the spaceship and obstacles.
 Sound Effects: Immerse yourself with sound effects for shooting, collisions, and explosions.
 Game Over Screen: Shows your final score and gives the option to restart the game.
+
 Technologies Used
 HTML5: For creating the structure of the game and rendering content.
 JavaScript: For the game logic, player input handling, and animations.
 CSS: For styling the game interface (if any).
 Canvas API: To render the graphics of the game in real-time.
+
 How to Play
 Start the game: Open index.html in any modern web browser.
 Control the spaceship: Use the arrow keys or W, A, S, D to move the spaceship up, down, left, or right.
 Shoot the enemies: Press the spacebar to shoot projectiles towards the aliens.
 Avoid enemy projectiles: Dodge or destroy the alien projectiles to stay alive.
 Game Over: The game ends when your spaceship is hit by an alien projectile or crashes into an enemy ship.
+
 Installation
 To play the game locally:
 Clone this repository to your local machine:
