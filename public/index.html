@@ -1,0 +1,126 @@
+<!-- 
+  Author: [Harry Kakadiya]
+  GitHub: [yaeger211202]
+  Student ID: [922964988]
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Space Shooter</title>
+    <style>
+        body {
+            margin: 0;
+            background-image: url('jet background.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        #gameContainer {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            border: 1px solid black;
+        }
+        #gameCanvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+        #gameName {
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+            text-align: center;
+            font-size: 48px;
+            font-weight: bold;
+            color: #fff;
+            text-shadow: 2px 2px #000;
+        }
+        #usernameInput {
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+            text-align: center;
+        }
+        #username {
+            padding: 10px;
+            font-size: 18px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        #startGameButton {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        #startGameButton:hover {
+            background-color: #3e8e41;
+        }
+        #gameOverMessage {
+            display: none;
+            color: red;
+            font-size: 36px;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-weight: bold;
+            z-index: 1;
+        }
+        #restartButton {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+        #restartButton img {
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="gameContainer">
+        <canvas id="gameCanvas"></canvas>
+    </div>
+    <div id="gameName">Space Shooter</div>
+    <div id="usernameInput">
+        <input id="username" type="text" placeholder="Enter your name">
+        <button id="startGameButton">Start Game</button>
+    </div>
+    <div id="gameOverMessage">Game Over!</div>
+    <button id="restartButton"><img src="restart button.png" alt="Restart Game"></button>
+    <audio id="backgroundMusic" src="background-music.mp3" loop></audio>
+
+    <script src="game.js"></script>
+</body>
+</html>

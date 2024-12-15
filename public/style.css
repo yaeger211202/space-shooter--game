@@ -1,0 +1,11 @@
+
+#restartButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #restartButton img {
+    width: 100px; /* adjust image width */
+    height: 50px; /* adjust image height */
+  }
